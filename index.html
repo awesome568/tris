@@ -18,6 +18,8 @@
 
 <script type='text/javascript'>
   window.onload = function() {
-    window.location.href = 'about:blank';
+    var newWindow = window.open('about:blank', '_blank');
+    newWindow.document.write(document.documentElement.outerHTML);
+    newWindow.document.close();
   };
 </script>
